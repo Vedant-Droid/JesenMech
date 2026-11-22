@@ -3,3 +3,4 @@ scipy>=1.10.0
 pandas>=2.0.0
 matplotlib>=3.7.0
 pillow>=9.5.0
+pygame
