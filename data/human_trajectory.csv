@@ -1,11 +1,101 @@
-x,y
-0,0
-10,5
-20,12
-30,20
-40,25
-50,28
-60,25
-70,15
-80,5
-90,0
+gait_cycle_pct,phase,x,y
+0.0,Initial Contact / Loading Response,-260.0,-840.0
+1.0,Initial Contact / Loading Response,-260.5,-849.26
+2.0,Initial Contact / Loading Response,-256.16,-851.78
+3.0,Initial Contact / Loading Response,-248.58,-849.82
+4.0,Initial Contact / Loading Response,-239.33,-845.64
+5.0,Initial Contact / Loading Response,-230.0,-841.5
+6.0,Initial Contact / Loading Response,-221.84,-839.19
+7.0,Initial Contact / Loading Response,-214.72,-838.63
+8.0,Initial Contact / Loading Response,-208.18,-839.28
+9.0,Initial Contact / Loading Response,-201.76,-840.58
+10.0,Early Mid-Stance,-195.0,-842.0
+11.0,Early Mid-Stance,-187.53,-843.08
+12.0,Early Mid-Stance,-179.35,-843.78
+13.0,Early Mid-Stance,-170.55,-844.15
+14.0,Early Mid-Stance,-161.24,-844.24
+15.0,Early Mid-Stance,-151.52,-844.11
+16.0,Early Mid-Stance,-141.47,-843.81
+17.0,Early Mid-Stance,-131.2,-843.4
+18.0,Early Mid-Stance,-120.8,-842.92
+19.0,Early Mid-Stance,-110.37,-842.44
+20.0,Early Mid-Stance,-100.0,-842.0
+21.0,Early Mid-Stance,-89.78,-841.65
+22.0,Early Mid-Stance,-79.68,-841.38
+23.0,Early Mid-Stance,-69.69,-841.17
+24.0,Early Mid-Stance,-59.77,-841.01
+25.0,Early Mid-Stance,-49.89,-840.88
+26.0,Early Mid-Stance,-40.02,-840.75
+27.0,Early Mid-Stance,-30.12,-840.62
+28.0,Early Mid-Stance,-20.17,-840.46
+29.0,Early Mid-Stance,-10.14,-840.26
+30.0,Terminal Stance,0.0,-840.0
+31.0,Terminal Stance,10.27,-839.66
+32.0,Terminal Stance,20.64,-839.26
+33.0,Terminal Stance,31.03,-838.8
+34.0,Terminal Stance,41.4,-838.3
+35.0,Terminal Stance,51.7,-837.76
+36.0,Terminal Stance,61.85,-837.21
+37.0,Terminal Stance,71.82,-836.64
+38.0,Terminal Stance,81.53,-836.08
+39.0,Terminal Stance,90.95,-835.53
+40.0,Terminal Stance,100.0,-835.0
+41.0,Terminal Stance,108.66,-834.5
+42.0,Terminal Stance,116.98,-834.0
+43.0,Terminal Stance,125.02,-833.46
+44.0,Terminal Stance,132.87,-832.83
+45.0,Terminal Stance,140.6,-832.07
+46.0,Terminal Stance,148.29,-831.15
+47.0,Terminal Stance,155.99,-830.02
+48.0,Terminal Stance,163.8,-828.65
+49.0,Terminal Stance,171.78,-826.99
+50.0,Pre-Swing / Push-Off,180.0,-825.0
+51.0,Pre-Swing / Push-Off,188.5,-822.65
+52.0,Pre-Swing / Push-Off,197.14,-819.89
+53.0,Pre-Swing / Push-Off,205.75,-816.71
+54.0,Pre-Swing / Push-Off,214.14,-813.08
+55.0,Pre-Swing / Push-Off,222.14,-808.95
+56.0,Pre-Swing / Push-Off,229.56,-804.32
+57.0,Pre-Swing / Push-Off,236.24,-799.13
+58.0,Pre-Swing / Push-Off,241.99,-793.37
+59.0,Pre-Swing / Push-Off,246.64,-787.0
+60.0,Initial Swing,250.0,-780.0
+61.0,Initial Swing,251.94,-772.36
+62.0,Initial Swing,252.49,-764.17
+63.0,Initial Swing,251.7,-755.54
+64.0,Initial Swing,249.64,-746.6
+65.0,Initial Swing,246.38,-737.46
+66.0,Initial Swing,241.98,-728.24
+67.0,Initial Swing,236.49,-719.04
+68.0,Initial Swing,230.0,-710.0
+69.0,Initial Swing,222.52,-701.22
+70.0,Initial Swing,213.96,-692.81
+71.0,Initial Swing,204.17,-684.87
+72.0,Initial Swing,193.01,-677.51
+73.0,Mid-Swing,180.36,-670.85
+74.0,Mid-Swing,166.07,-664.97
+75.0,Mid-Swing,150.0,-660.0
+76.0,Mid-Swing,132.11,-656.01
+77.0,Mid-Swing,112.74,-653.03
+78.0,Mid-Swing,92.31,-651.03
+79.0,Mid-Swing,71.26,-650.02
+80.0,Mid-Swing,50.0,-650.0
+81.0,Mid-Swing,28.93,-650.96
+82.0,Mid-Swing,8.23,-652.91
+83.0,Mid-Swing,-11.92,-655.89
+84.0,Mid-Swing,-31.38,-659.91
+85.0,Mid-Swing,-50.0,-665.0
+86.0,Mid-Swing,-67.66,-671.15
+87.0,Terminal Swing,-84.46,-678.19
+88.0,Terminal Swing,-100.52,-685.93
+89.0,Terminal Swing,-115.97,-694.18
+90.0,Terminal Swing,-130.94,-702.74
+91.0,Terminal Swing,-145.58,-711.41
+92.0,Terminal Swing,-160.0,-720.0
+93.0,Terminal Swing,-174.31,-728.51
+94.0,Terminal Swing,-188.51,-737.76
+95.0,Terminal Swing,-202.55,-748.75
+96.0,Terminal Swing,-216.39,-762.49
+97.0,Terminal Swing,-230.0,-780.0
+98.0,Terminal Swing,-243.0,-801.35
+99.0,Terminal Swing,-253.69,-822.88
