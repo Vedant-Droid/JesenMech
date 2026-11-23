@@ -24,10 +24,15 @@ JesenMech/
 │   └── human_trajectory.csv       # Standard human foot gait trajectory landmarks
 ├── src/
 │   ├── main.py                    # Main execution script & CLI entrypoint
+│   ├── positional_analysis.py     # Kinematic Center of Mass (CoM) positional analysis
 │   ├── jansen.py                  # Forward kinematics and joint solver (O, Y, Z, X, W, V, U, T)
 │   ├── optimizer.py               # Optimization engine, Kabsch alignment, and synthesis
 │   ├── trajectory.py              # Trajectory loader with periodic cubic spline interpolation
-│   └── animate.py                 # Generates kinematic linkage animation GIF
+│   ├── animate.py                 # Generates kinematic linkage animation GIF
+│   ├── animate_pygame.py          # Interactive Pygame desktop simulator
+│   └── animate_gui.py             # Zero-dependency Tkinter desktop visualizer
+├── link_centers_of_mass.csv       # Output: CoM coordinates of each link vs crank angle
+├── link_com_trajectories.png      # Output: 2D CoM trajectories & X/Y displacement plots
 ├── back_calculated_links.csv      # Output: Synthesized link dimensions and ratios
 ├── optimized_trajectory.csv       # Output: Coordinates traced by synthesized foot
 ├── trajectory_comparison.png      # Output: 2-Panel trajectory & stance comparison plot
@@ -84,6 +89,26 @@ To synthesize links for your own trajectory CSV:
 python3 src/main.py --input path/to/your_trajectory.csv
 ```
 > **CSV Format**: The CSV only needs `x` and `y` columns containing 2D points along the foot path. The loader automatically handles sparse landmarks or dense points using periodic cubic spline interpolation.
+
+---
+
+## Positional Analysis (Link Centers of Mass)
+
+To compute the $(X, Y)$ coordinates of the **Center of Mass (CoM)** for each moving link with the **crank pivot axis as the origin $(0, 0)$**:
+
+### 1. Run 360° Sweep & Generate Plots
+```bash
+python3 src/positional_analysis.py
+```
+This generates:
+- [`link_centers_of_mass.csv`](file:///home/vedantdroid/JesenMech/link_centers_of_mass.csv): 360-row table ($1^\circ$ resolution) with $(x, y)$ for all links and joints.
+- [`link_com_trajectories.png`](file:///home/vedantdroid/JesenMech/link_com_trajectories.png): 3-panel figure showing 2D spatial CoM trajectories and horizontal/vertical displacement curves.
+
+### 2. Query a Single Crank Angle
+```bash
+python3 src/positional_analysis.py --angle 45.0
+```
+Outputs a real-time console readout of all $(X, Y)$ Centers of Mass at $\theta = 45^\circ$.
 
 ---
 
